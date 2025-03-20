@@ -2,13 +2,25 @@ package model;
 
 public class Endereco {
 
+    private String rua;
     private int numeroCasa;
     private String cidade;
-    private String rua;
 
-    public Endereco(int numeroCasa, String cidade, String rua) {
+    public Endereco(String rua, int numeroCasa, String cidade) {
+        this.rua = rua;
         this.numeroCasa = numeroCasa;
         this.cidade = cidade;
-        this.rua = rua;
+    }
+
+    public int getNumeroCasa() {
+        return numeroCasa;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public String getRua() {
+        return rua;
     }
 }

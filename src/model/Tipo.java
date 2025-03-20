@@ -2,10 +2,11 @@ package model;
 
 public enum Tipo {
 
-    CACHORRO("cachorro"),
-    GATO("gato");
+    CACHORRO("Cachorro"),
+    GATO("Gato");
 
     private String nome;
+
     Tipo(String nome) {
         this.nome = nome;
     }
